@@ -32,8 +32,8 @@ cacheSolve <- function(x, ...) {
     message("GET THE CACHED DATA")
     return(inv)
   }
-  mat <- x$get()
-  inv <- solve(mat, ...)
+  matri <- x$get()
+  inv <- solve(matri, ...)
   x$setINV(inv)
   inv
 }
